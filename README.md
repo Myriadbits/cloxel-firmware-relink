@@ -15,7 +15,10 @@ Firmware version in this kit: see [`VERSION`](VERSION).
 
 | Part | Version | License | In this kit |
 | --- | --- | --- | --- |
-| [WLED](https://github.com/wled/WLED), including ArduinoJson, WS2812FX and the other code in `wled00/src/dependencies` | 0.15.0-b6 with small Cloxel changes | MIT | Source |
+| [WLED](https://github.com/wled/WLED), including ArduinoJson, WS2812FX, Toki and SparkFun DMX | 0.15.0-b6 with small Cloxel changes | MIT | Source |
+| [TimeLib](https://github.com/PaulStoffregen/Time) (in `wled00/src/dependencies/time`) | as in WLED 0.15.0-b6 | LGPL-2.1 | Source |
+| [Arduino Timezone Library](https://github.com/JChristensen/Timezone) (in `wled00/src/dependencies/timezone`) | as in WLED 0.15.0-b6 | CC BY-SA 3.0 | Source |
+| ESPAsyncE131 / ESPAsyncDDP (in `wled00/src/dependencies/e131`) | as in WLED 0.15.0-b6 | Free use, see `licenses/NOTICES.md` | Source |
 | [FastLED](https://github.com/FastLED/FastLED) | 3.6.0 | MIT | Downloaded by PlatformIO |
 | [NeoPixelBus](https://github.com/Makuna/NeoPixelBus) | 2.8.0 | LGPL-3.0 | Downloaded by PlatformIO |
 | [ESPAsyncWebServer](https://github.com/Aircoookie/ESPAsyncWebServer) (WLED version) | 2.2.1 | LGPL-3.0 | Downloaded by PlatformIO |
@@ -25,7 +28,9 @@ Firmware version in this kit: see [`VERSION`](VERSION).
 | [ESP-IDF](https://github.com/espressif/esp-idf) (inside the Arduino core) | 4.4 | Apache-2.0 | Downloaded by PlatformIO |
 | Cloxel usermod | see `VERSION` | Proprietary, © Myriadbits | `precompiled/libcloxel.a` (compiled) |
 
-The license texts are in the [`licenses`](licenses) folder. WLED's own license is in [`LICENSE`](LICENSE).
+The copyright notices of all parts, including the NOTICE file of Apache Mynewt NimBLE, are in
+[`licenses/NOTICES.md`](licenses/NOTICES.md). The license texts are in the [`licenses`](licenses) folder.
+WLED's own license is in [`LICENSE`](LICENSE).
 
 The compiled Cloxel library was built from source files that include header files of WLED and of the
 libraries above, such as the ESPAsyncWebServer, AsyncTCP and NeoPixelBus headers. As required by section 3
